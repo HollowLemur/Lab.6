@@ -1,0 +1,22 @@
+{
+  "name": "defi-lab6",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:sepolia": "node --env-file=.env scripts/check-sepolia.js",
+    "compile": "node scripts/compile.js",
+    "deploy": "node --env-file=.env scripts/deploy.js",
+    "open-position": "node --env-file=.env scripts/open-position.js",
+    "bot": "node --env-file=.env scripts/bot.js",
+    "simulate:loss": "node --env-file=.env scripts/simulate-loss.js",
+    "report": "node scripts/report.js"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "1.3.0",
+    "@openzeppelin/contracts": "5.0.2",
+    "ethers": "6.17.0"
+  },
+  "devDependencies": {
+    "solc": "0.8.34"
+  }
+}
